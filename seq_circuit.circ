@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.16.1.2.exe" version="1.0">
+This file is intended to be loaded by Logisim http://logisim.altervista.org
+<lib desc="#Wiring" name="0"/>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#TTL" name="2"/>
+  <lib desc="#Plexers" name="3"/>
+  <lib desc="#Arithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#Base" name="7">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="7" map="Button2" name="Poke Tool"/>
+    <tool lib="7" map="Button3" name="Menu Tool"/>
+    <tool lib="7" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="7" name="Poke Tool"/>
+    <tool lib="7" name="Edit Tool"/>
+    <sep/>
+    <tool lib="7" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+    <wire from="(550,230)" to="(670,230)"/>
+    <wire from="(550,160)" to="(550,230)"/>
+    <wire from="(550,160)" to="(670,160)"/>
+    <wire from="(480,160)" to="(550,160)"/>
+    <wire from="(570,200)" to="(670,200)"/>
+    <wire from="(570,200)" to="(570,270)"/>
+    <wire from="(480,270)" to="(570,270)"/>
+    <wire from="(570,270)" to="(670,270)"/>
+    <wire from="(830,180)" to="(830,270)"/>
+    <wire from="(830,270)" to="(900,270)"/>
+    <wire from="(830,180)" to="(900,180)"/>
+    <wire from="(730,180)" to="(830,180)"/>
+    <wire from="(720,250)" to="(760,250)"/>
+    <wire from="(760,250)" to="(760,350)"/>
+    <wire from="(760,350)" to="(1030,350)"/>
+    <wire from="(950,290)" to="(1070,290)"/>
+    <wire from="(1030,330)" to="(1030,350)"/>
+    <wire from="(1030,330)" to="(1070,330)"/>
+    <wire from="(1120,310)" to="(1190,310)"/>
+    <wire from="(1190,310)" to="(1190,420)"/>
+    <wire from="(1020,420)" to="(1190,420)"/>
+    <wire from="(1020,570)" to="(1050,570)"/>
+    <wire from="(1020,420)" to="(1020,570)"/>
+    <wire from="(970,530)" to="(1050,530)"/>
+    <wire from="(1170,530)" to="(1170,660)"/>
+    <wire from="(960,200)" to="(1070,200)"/>
+    <wire from="(810,220)" to="(900,220)"/>
+    <wire from="(810,310)" to="(900,310)"/>
+    <wire from="(810,310)" to="(810,660)"/>
+    <wire from="(810,220)" to="(810,310)"/>
+    <wire from="(880,660)" to="(1170,660)"/>
+    <wire from="(810,660)" to="(880,660)"/>
+    <wire from="(1110,530)" to="(1170,530)"/>
+    <comp lib="1" loc="(1120,310)" name="OR Gate">
+      <a name="size" val="50"/>
+    </comp>
+    <comp lib="5" loc="(1110,530)" name="D Flip-Flop"/>
+    <comp lib="1" loc="(720,250)" name="AND Gate">
+      <a name="size" val="50"/>
+    </comp>
+    <comp lib="0" loc="(1070,200)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="7" loc="(1113,154)" name="Text">
+      <a name="font" val="Dialog plain 12"/>
+    </comp>
+    <comp lib="0" loc="(970,530)" name="Clock"/>
+    <comp lib="7" loc="(436,279)" name="Text">
+      <a name="text" val="Y"/>
+      <a name="font" val="Dialog bold 24"/>
+    </comp>
+    <comp lib="0" loc="(480,160)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(950,290)" name="AND Gate">
+      <a name="size" val="50"/>
+    </comp>
+    <comp lib="0" loc="(880,660)" name="Pin">
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(480,270)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="7" loc="(437,169)" name="Text">
+      <a name="text" val="X"/>
+      <a name="font" val="Dialog bold 22"/>
+    </comp>
+    <comp lib="7" loc="(1142,302)" name="Text">
+      <a name="text" val="C"/>
+      <a name="font" val="Dialog bold 22"/>
+    </comp>
+    <comp lib="1" loc="(730,180)" name="XOR Gate">
+      <a name="size" val="50"/>
+    </comp>
+    <comp lib="7" loc="(1080,176)" name="Text">
+      <a name="text" val="S"/>
+      <a name="font" val="Dialog bold 22"/>
+    </comp>
+    <comp lib="1" loc="(960,200)" name="XOR Gate">
+      <a name="size" val="50"/>
+    </comp>
+    <comp lib="7" loc="(870,633)" name="Text">
+      <a name="text" val="Q"/>
+      <a name="font" val="Dialog bold 22"/>
+    </comp>
+  </circuit>
+</project>
